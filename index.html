@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Weather</title>
+  </head>
+  <body>
+    <div class="container">
+      <main>
+        <header>
+          <div class="listhead">
+            <h1>MY WEATHER</h1>
+            <div class="logo-input">
+              <input type="text" placeholder="Baku" value="Tashkent" />
+              <img src="images/Search-PNG-Clipart.png" style="cursor: pointer;" alt="" />
+            </div>
+          </div>
+        </header>
+        <nav>
+          <ul>
+            <li class="list" id="today">Today</li>
+            <li class="list" id="li-days">5-day forecast</li>
+            <li class="list" id="li-nearby">Nearby places</li>
+          </ul>
+        </nav>
+        <div class="main-container">
+          <div class="main-title">
+            <h1>CURRENT WEATHER</h1>
+            <div class="date"></div>
+          </div>
+          <div class="info">
+            <div class="block sunny">
+              <img src="./images/sub.png" class="osadki" alt="sunny" />
+              <p class="blocks-clouds">qwe</p>
+            </div>
+            <div class="block temperature">
+              <h1 class="temp-today"></h1>
+              <p class="temp-today-feels-like"></p>
+            </div>
+            <div class="block info-weather">
+              <p class="today-sunrise"></p>
+              <p class="today-sunset"></p>
+              <p class="today-time"></p>
+            </div>
+          </div>
+        </div>
+         <section class="five-days">
+        <div class="sect-container-fivedays">
+          <div class="blocks" data-cast="0">
+            <h3 class="blocks-tonight">Tonight</h3>
+            <p class="blocks-date">JUN 30</p>
+            <img src="./images/sub.png" class="osadki" alt="" />
+            <h1 class="blocks-temp">25C</h1>
+            <p class="blocks-cloud">clear, warm</p>
+          </div>
+          <div class="blocks" data-cast="8">
+            <h3 class="blocks-tonight">Tonight</h3>
+            <p class="blocks-date">JUN 30</p>
+            <img src="./images/sub.png" class="osadki" alt="" />
+            <h1 class="blocks-temp">25C</h1>
+            <p class="blocks-cloud">clear, warm</p>
+          </div>
+          <div class="blocks" data-cast="16">
+            <h3 class="blocks-tonight">Tonight</h3>
+            <p class="blocks-date">JUN 30</p>
+            <img src="./images/sub.png" class="osadki" alt="" />
+            <h1 class="blocks-temp">25C</h1>
+            <p class="blocks-cloud">clear, warm</p>
+          </div>
+          <div class="blocks" data-cast="24">
+            <h3 class="blocks-tonight">Tonight</h3>
+            <p class="blocks-date">JUN 30</p>
+            <img src="./images/sub.png" class="osadki" alt="" />
+            <h1 class="blocks-temp">25C</h1>
+            <p class="blocks-cloud">clear, warm</p>
+          </div>
+          <div class="blocks" data-cast="32">
+            <h3 class="blocks-tonight">Tonight</h3>
+            <p class="blocks-date">JUN 30</p>
+            <img src="./images/sub.png" class="osadki" alt="" />
+            <h1 class="blocks-temp">25C</h1>
+            <p class="blocks-cloud">clear, warm</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="nearby">
+        <div class="sect-container">
+          <h3>NEARBY PLACES</h3>
+          <div class="info-nearby">
+            <div class="block-nearby">Baladhazy</div>
+            <div class="block-nearby">Baladhazy</div>
+            <div class="block-nearby">Baladhazy</div>
+            <div class="block-nearby">Baladhazy</div>
+          </div>
+        </div>
+      </section>
+      <section class="morecast">
+        <div class="morecast-cover-block">
+          <div class="morecast-title">
+          <h1 class="morecast-day">Tonight</h1>
+          <img  class="morecast-img osadki" alt="">
+          </div>
+          <div class="morecast-sets">
+            <p class="morecast-sunrise">Sunrise</p>
+            <p class="morecast-sunset">Sunset</p>
+          </div>
+        <div class="morecast-content">
+          <p class="morecast-temp">Temperature 30c</p>
+          <p class="morecast-feelslike">Feels like 30c</p>
+          <p class="morecast-cloud">Cloud 30c</p>
+          <p class="morecast-humadity">Humadity 30c</p>
+          <p class="morecast-pressure">Pressure 30c</p>
+          <p class="morecast-wind">Wind 30c</p>
+          <p class="morecast-description">Description 30c</p>
+         </div>
+        </div>
+      </section>
+      
+    <footer>
+      <div class="footer-container">
+        
+      </div>
+    </footer>
+    </div>
+      </main>
+     
+  </body>
+
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"
+    integrity="sha512-qTXRIMyZIFb8iQcfjXWCO8+M5Tbc38Qi5WzdPOYZHIlZpzBHG3L3by84BBBOiRGiEb7KKtAOAs5qYdUiZiQNNQ=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  ></script>
+  <script src="/plugins/JQuery/jquery-3.6.1.min.js"></script>
+  <script src="./js/li_style.js"></script>
+  <script src="./js/fivedays.js"></script>
+  <script src="./js/nearby.js"></script>
+  <script src="./js/morecast.js"></script>
+  <script src="./js/main.js"></script>
+</html>
